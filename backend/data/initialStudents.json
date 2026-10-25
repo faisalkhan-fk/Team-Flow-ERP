@@ -1,0 +1,62 @@
+[
+  {
+    "_id": "660000000000000000000001",
+    "rollNumber": "CS202601",
+    "name": "Aarav Sharma",
+    "email": "aarav.sharma@campus.edu",
+    "department": "Computer Science",
+    "semester": 6,
+    "gpa": 9.2,
+    "skills": ["React", "Node.js", "Express", "MongoDB"],
+    "status": "Active",
+    "createdAt": "2026-08-01T10:00:00.000Z"
+  },
+  {
+    "_id": "660000000000000000000002",
+    "rollNumber": "IT202602",
+    "name": "Priya Patel",
+    "email": "priya.patel@campus.edu",
+    "department": "Information Technology",
+    "semester": 6,
+    "gpa": 8.7,
+    "skills": ["JavaScript", "Python", "React", "REST APIs"],
+    "status": "Active",
+    "createdAt": "2026-08-02T11:30:00.000Z"
+  },
+  {
+    "_id": "660000000000000000000003",
+    "rollNumber": "CS202603",
+    "name": "Rohan Verma",
+    "email": "rohan.verma@campus.edu",
+    "department": "Computer Science",
+    "semester": 4,
+    "gpa": 7.9,
+    "skills": ["HTML/CSS", "Bootstrap", "Express.js"],
+    "status": "Active",
+    "createdAt": "2026-08-05T09:15:00.000Z"
+  },
+  {
+    "_id": "660000000000000000000004",
+    "rollNumber": "EC202604",
+    "name": "Ananya Gupta",
+    "email": "ananya.gupta@campus.edu",
+    "department": "Electronics",
+    "semester": 6,
+    "gpa": 8.1,
+    "skills": ["C++", "Embedded Systems", "React Basics"],
+    "status": "Active",
+    "createdAt": "2026-08-08T14:20:00.000Z"
+  },
+  {
+    "_id": "660000000000000000000005",
+    "rollNumber": "ME202605",
+    "name": "Karan Malhotra",
+    "email": "karan.malhotra@campus.edu",
+    "department": "Mechanical",
+    "semester": 8,
+    "gpa": 6.8,
+    "skills": ["AutoCAD", "MATLAB", "JavaScript"],
+    "status": "Active",
+    "createdAt": "2026-08-10T16:45:00.000Z"
+  }
+]

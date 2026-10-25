@@ -1,0 +1,490 @@
+{
+  "users": [
+    {
+      "id": "usr-1",
+      "username": "admin",
+      "name": "Arjun Singhania",
+      "email": "admin@teamflow.in",
+      "password": "password123",
+      "role": "ROLE_ADMIN",
+      "department": "Engineering",
+      "status": "Approved",
+      "employeeId": "TF-IND-101"
+    },
+    {
+      "id": "usr-2",
+      "username": "manager",
+      "name": "Sneha Roy",
+      "email": "sneha@teamflow.in",
+      "password": "password123",
+      "role": "ROLE_MANAGER",
+      "department": "Product",
+      "status": "Approved",
+      "employeeId": "TF-IND-102"
+    },
+    {
+      "id": "usr-3",
+      "username": "employee",
+      "name": "Ananya Sharma",
+      "email": "ananya@teamflow.in",
+      "password": "password123",
+      "role": "ROLE_EMPLOYEE",
+      "department": "Engineering",
+      "status": "Approved",
+      "employeeId": "TF-IND-103"
+    },
+    {
+      "id": "usr-faisal",
+      "username": "faisal",
+      "name": "Faisal Khan",
+      "email": "kingkhan7863030@gmail.com",
+      "alternateEmails": [
+        "faisalkhan7863030@gmail.com",
+        "faisal@gmail.com"
+      ],
+      "password": "password123",
+      "role": "ROLE_EMPLOYEE",
+      "department": "Engineering",
+      "status": "Approved",
+      "employeeId": "TF-IND-107"
+    }
+  ],
+  "departments": [
+    {
+      "_id": "dept-1",
+      "name": "Engineering",
+      "head": "Arjun Singhania",
+      "budget": 8500000,
+      "location": "Tower B, Cyber City, Gurugram",
+      "description": "Full-stack software platforms, cloud infrastructure, and DevOps architecture."
+    },
+    {
+      "_id": "dept-2",
+      "name": "Product",
+      "head": "Sneha Roy",
+      "budget": 5200000,
+      "location": "Prestige Tech Park, Bengaluru",
+      "description": "Product strategy, user research, backlog refinement, and agile sprint roadmap."
+    },
+    {
+      "_id": "dept-3",
+      "name": "Design",
+      "head": "Vikram Sethi",
+      "budget": 3500000,
+      "location": "Mindspace IT Park, Hitec City, Hyderabad",
+      "description": "Enterprise UI/UX design systems, user journey mapping, and wireframing."
+    },
+    {
+      "_id": "dept-4",
+      "name": "Marketing",
+      "head": "Rohan Mehra",
+      "budget": 4200000,
+      "location": "Sector 62, Electronic City, Noida",
+      "description": "Growth campaigns, digital branding, corporate B2B communications, and SEO."
+    },
+    {
+      "_id": "dept-5",
+      "name": "Human Resources",
+      "head": "Meera Kapoor",
+      "budget": 2800000,
+      "location": "Tower B, Cyber City, Gurugram",
+      "description": "Talent acquisition, employee welfare, Indian labor law compliance, and payroll."
+    },
+    {
+      "_id": "dept-6",
+      "name": "Finance",
+      "head": "Rajesh Nair",
+      "budget": 6000000,
+      "location": "Bandra Kurla Complex (BKC), Mumbai",
+      "description": "Corporate audit, GST filings, TDS compliance, and fiscal management."
+    }
+  ],
+  "employees": [
+    {
+      "_id": "66a000000000000000000001",
+      "employeeId": "TF-IND-101",
+      "name": "Arjun Singhania",
+      "email": "arjun.singhania@teamflow.in",
+      "department": "Engineering",
+      "role": "Lead Full-Stack Architect",
+      "salary": 1850000,
+      "pan": "ABCPS1234F",
+      "uan": "100987654321",
+      "bankAccount": "50100234567890",
+      "ifsc": "HDFC0001234",
+      "skills": [
+        "React.js",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "AWS"
+      ],
+      "status": "Active",
+      "performanceScore": 4.9,
+      "joinedDate": "2024-03-15T09:00:00.000Z",
+      "createdAt": "2024-03-15T09:00:00.000Z"
+    },
+    {
+      "_id": "66a000000000000000000002",
+      "employeeId": "TF-IND-102",
+      "name": "Sneha Roy",
+      "email": "sneha.roy@teamflow.in",
+      "department": "Product",
+      "role": "Principal Product Manager",
+      "salary": 1600000,
+      "pan": "BCEPR2345G",
+      "uan": "100987654322",
+      "bankAccount": "91201004567891",
+      "ifsc": "UTIB0000123",
+      "skills": [
+        "Agile Roadmap",
+        "UI/UX Specs",
+        "Jira",
+        "User Research"
+      ],
+      "status": "Active",
+      "performanceScore": 4.7,
+      "joinedDate": "2024-05-10T10:00:00.000Z",
+      "createdAt": "2024-05-10T10:00:00.000Z"
+    },
+    {
+      "_id": "66a000000000000000000003",
+      "employeeId": "TF-IND-103",
+      "name": "Vikram Sethi",
+      "email": "vikram.sethi@teamflow.in",
+      "department": "Design",
+      "role": "Senior UI/UX Designer",
+      "salary": 1250000,
+      "pan": "CDEPS3456H",
+      "uan": "100987654323",
+      "bankAccount": "60341011000123",
+      "ifsc": "SBIN0004567",
+      "skills": [
+        "Figma",
+        "Design Systems",
+        "CSS Grid",
+        "Wireframing"
+      ],
+      "status": "Active",
+      "performanceScore": 4.4,
+      "joinedDate": "2024-08-01T11:00:00.000Z",
+      "createdAt": "2024-08-01T11:00:00.000Z"
+    },
+    {
+      "_id": "66a000000000000000000004",
+      "employeeId": "TF-IND-104",
+      "name": "Ananya Sharma",
+      "email": "ananya.sharma@teamflow.in",
+      "department": "Engineering",
+      "role": "Frontend Specialist",
+      "salary": 850000,
+      "pan": "DEFPS4567J",
+      "uan": "100987654324",
+      "bankAccount": "12340021000567",
+      "ifsc": "ICIC0000567",
+      "skills": [
+        "React 19",
+        "JavaScript",
+        "Hooks",
+        "Tailwind CSS"
+      ],
+      "status": "Active",
+      "performanceScore": 4.6,
+      "joinedDate": "2025-01-12T09:30:00.000Z",
+      "createdAt": "2025-01-12T09:30:00.000Z"
+    },
+    {
+      "_id": "66a000000000000000000005",
+      "employeeId": "TF-IND-105",
+      "name": "Rohan Mehra",
+      "email": "rohan.mehra@teamflow.in",
+      "department": "Marketing",
+      "role": "Growth & SEO Lead",
+      "salary": 720000,
+      "pan": "EFGPS5678K",
+      "uan": "100987654325",
+      "bankAccount": "45670100008912",
+      "ifsc": "KKBK0000890",
+      "skills": [
+        "Growth Hacking",
+        "Google Analytics",
+        "Content Strategy"
+      ],
+      "status": "Active",
+      "performanceScore": 4.1,
+      "joinedDate": "2025-03-20T10:15:00.000Z",
+      "createdAt": "2025-03-20T10:15:00.000Z"
+    },
+    {
+      "_id": "66a000000000000000000007",
+      "employeeId": "TF-IND-107",
+      "name": "Faisal Khan",
+      "email": "kingkhan7863030@gmail.com",
+      "alternateEmails": [
+        "faisalkhan7863030@gmail.com",
+        "faisal@gmail.com"
+      ],
+      "department": "Engineering",
+      "role": "Software Engineer",
+      "salary": 650000,
+      "pan": "FKHPS7890M",
+      "uan": "100987654327",
+      "bankAccount": "50100456789012",
+      "ifsc": "HDFC0001234",
+      "skills": [
+        "React.js",
+        "Node.js",
+        "Express",
+        "REST APIs"
+      ],
+      "status": "Active",
+      "performanceScore": 4.5,
+      "joinedDate": "2025-02-01T10:00:00.000Z",
+      "createdAt": "2025-02-01T10:00:00.000Z"
+    }
+  ],
+  "projects": [
+    {
+      "_id": "66b000000000000000000001",
+      "projectCode": "PRJ-TATA",
+      "title": "Cloud ERP Enterprise Migration",
+      "client": "Tata Digital Ltd.",
+      "department": "Engineering",
+      "budget": 4500000,
+      "priority": "Critical",
+      "status": "In Progress",
+      "completionPercentage": 65,
+      "leadEmployee": "Arjun Singhania",
+      "deadline": "2026-12-31T23:59:59.000Z"
+    },
+    {
+      "_id": "66b000000000000000000002",
+      "projectCode": "PRJ-RELIANCE",
+      "title": "NextGen Retail Design System",
+      "client": "Reliance Retail Technologies",
+      "department": "Design",
+      "budget": 2800000,
+      "priority": "High",
+      "status": "In Progress",
+      "completionPercentage": 82,
+      "leadEmployee": "Vikram Sethi",
+      "deadline": "2026-11-15T23:59:59.000Z"
+    },
+    {
+      "_id": "66b000000000000000000003",
+      "projectCode": "PRJ-HDFC",
+      "title": "Digital Banking KYC Onboarding Portal",
+      "client": "HDFC Bank Digital Solutions",
+      "department": "Product",
+      "budget": 3500000,
+      "priority": "Medium",
+      "status": "Planning",
+      "completionPercentage": 25,
+      "leadEmployee": "Sneha Roy",
+      "deadline": "2027-02-28T23:59:59.000Z"
+    }
+  ],
+  "tasks": [
+    {
+      "_id": "66c000000000000000000001",
+      "taskId": "TSK-101",
+      "title": "Integrate Razorpay & Indian Payment Gateway",
+      "description": "Establish Express routers, UPI & Netbanking endpoints, and validations.",
+      "projectCode": "PRJ-TATA",
+      "assignedTo": "Arjun Singhania",
+      "priority": "Urgent",
+      "status": "In Progress",
+      "estimatedHours": 6,
+      "dueDate": "2026-10-18T18:00:00.000Z"
+    },
+    {
+      "_id": "66c000000000000000000002",
+      "taskId": "TSK-102",
+      "title": "Aadhaar & PAN KYC Validation Module",
+      "description": "Build frontend form validation and backend verification API for Indian users.",
+      "projectCode": "PRJ-HDFC",
+      "assignedTo": "Ananya Sharma",
+      "priority": "High",
+      "status": "Done",
+      "estimatedHours": 8,
+      "dueDate": "2026-10-22T18:00:00.000Z"
+    },
+    {
+      "_id": "66c00000000000000000003",
+      "taskId": "TSK-103",
+      "title": "Corporate Design Kit for Reliance Retail",
+      "description": "Establish branding, sidebar components, and Indian mobile-first responsive layout.",
+      "projectCode": "PRJ-RELIANCE",
+      "assignedTo": "Vikram Sethi",
+      "priority": "Medium",
+      "status": "Todo",
+      "estimatedHours": 12,
+      "dueDate": "2026-10-20T18:00:00.000Z"
+    }
+  ],
+  "attendance": [
+    {
+      "_id": "att-1792936627718",
+      "employeeId": "TF-IND-101",
+      "employeeName": "Arjun Singhania",
+      "department": "Engineering",
+      "date": "2026-10-25",
+      "checkIn": "19:27:07",
+      "checkOut": "19:27:42",
+      "status": "Late",
+      "workingHours": 0.1
+    },
+    {
+      "_id": "att-1792783515864",
+      "employeeId": "TF-IND-101",
+      "employeeName": "Arjun Singhania",
+      "department": "Engineering",
+      "date": "2026-10-23",
+      "checkIn": "00:55:15",
+      "checkOut": "00:55:19",
+      "status": "Present",
+      "workingHours": 0.1
+    },
+    {
+      "_id": "att-1792783480352",
+      "employeeId": "TF-IND-101",
+      "employeeName": "Arjun Singhania",
+      "department": "Engineering",
+      "date": "2026-10-23",
+      "checkIn": "00:54:40",
+      "checkOut": "00:55:05",
+      "status": "Present",
+      "workingHours": 0.1
+    },
+    {
+      "_id": "att-1792783105090",
+      "employeeId": "TF-IND-107",
+      "employeeName": "Faisal Khan",
+      "department": "Engineering",
+      "date": "2026-10-23",
+      "checkIn": "00:48:25",
+      "checkOut": "--:--",
+      "status": "Present",
+      "workingHours": "In Progress"
+    },
+    {
+      "_id": "att-1",
+      "employeeId": "TF-IND-101",
+      "employeeName": "Arjun Singhania",
+      "department": "Engineering",
+      "date": "2026-10-16",
+      "checkIn": "09:10:15 IST",
+      "checkOut": "--:--",
+      "status": "Present",
+      "workingHours": 8
+    },
+    {
+      "_id": "att-2",
+      "employeeId": "TF-IND-102",
+      "employeeName": "Sneha Roy",
+      "department": "Product",
+      "date": "2026-10-16",
+      "checkIn": "09:15:30 IST",
+      "checkOut": "--:--",
+      "status": "Present",
+      "workingHours": 7.8
+    },
+    {
+      "_id": "att-3",
+      "employeeId": "TF-IND-103",
+      "employeeName": "Vikram Sethi",
+      "department": "Design",
+      "date": "2026-10-16",
+      "checkIn": "09:40:10 IST",
+      "checkOut": "--:--",
+      "status": "Late",
+      "workingHours": 7.5
+    },
+    {
+      "_id": "att-4",
+      "employeeId": "TF-IND-104",
+      "employeeName": "Ananya Sharma",
+      "department": "Engineering",
+      "date": "2026-10-16",
+      "checkIn": "08:55:00 IST",
+      "checkOut": "--:--",
+      "status": "Present",
+      "workingHours": 8.2
+    },
+    {
+      "_id": "att-5",
+      "employeeId": "TF-IND-105",
+      "employeeName": "Rohan Mehra",
+      "department": "Marketing",
+      "date": "2026-10-16",
+      "checkIn": "--:--",
+      "checkOut": "--:--",
+      "status": "On Leave",
+      "workingHours": 0
+    }
+  ],
+  "leaves": [
+    {
+      "_id": "lv-1792783105097",
+      "employeeId": "TF-IND-107",
+      "employeeName": "Faisal Khan",
+      "department": "Engineering",
+      "leaveType": "Casual Leave",
+      "startDate": "2026-10-25",
+      "endDate": "2026-10-26",
+      "days": 2,
+      "reason": "Family event",
+      "status": "REJECTED",
+      "appliedAt": "2026-10-23T19:18:25.097Z"
+    },
+    {
+      "_id": "lv-1",
+      "employeeId": "TF-IND-105",
+      "employeeName": "Rohan Mehra",
+      "department": "Marketing",
+      "leaveType": "Paid Leave",
+      "startDate": "2026-10-16",
+      "endDate": "2026-10-18",
+      "days": 3,
+      "reason": "Diwali family celebrations & personal travel to Jaipur",
+      "status": "APPROVED",
+      "appliedAt": "2026-10-14T10:00:00.000Z"
+    },
+    {
+      "_id": "lv-2",
+      "employeeId": "TF-IND-103",
+      "employeeName": "Vikram Sethi",
+      "department": "Design",
+      "leaveType": "Sick Leave",
+      "startDate": "2026-10-22",
+      "endDate": "2026-10-23",
+      "days": 2,
+      "reason": "Doctor consultation at Max Healthcare Hospital",
+      "status": "APPROVED",
+      "appliedAt": "2026-10-15T14:30:00.000Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "notif-1",
+      "message": "PRJ-TATA (Tata Digital) milestone 2 reached (65% progress).",
+      "type": "PROJECT",
+      "read": true,
+      "createdAt": "2026-10-16T08:30:00.000Z"
+    },
+    {
+      "id": "notif-2",
+      "message": "Leave application from Vikram Sethi is pending HR approval.",
+      "type": "HR",
+      "read": true,
+      "createdAt": "2026-10-16T09:15:00.000Z"
+    },
+    {
+      "id": "notif-3",
+      "message": "Monthly salary slips for October 2026 generated with EPF and TDS breakdown.",
+      "type": "PAYROLL",
+      "read": true,
+      "createdAt": "2026-10-15T17:00:00.000Z"
+    }
+  ]
+}

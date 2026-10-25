@@ -1,0 +1,19 @@
+{
+  "name": "mern-syllabus-backend",
+  "version": "1.0.0",
+  "description": "Backend API for MERN Stack Academic Syllabus Project",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.3.1",
+    "morgan": "^1.10.0",
+    "nodemailer": "^10.2.1"
+  }
+}
