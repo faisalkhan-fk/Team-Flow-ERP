@@ -1,78 +1,122 @@
 # 🚀 TeamFlow ERP – Employee, Project & Task Management System
-### Full-Stack MERN Application aligned with 60-Hour Academic Syllabus (Units 1 - 5)
 
----
+### Full-Stack MERN Application | Academic Syllabus Project (Units 1–5)
 
 ## 📌 Project Overview
-**TeamFlow ERP** is a modern, enterprise-grade full-stack application engineered strictly in alignment with the academic **React + Node.js + Express + MongoDB (MERN)** curriculum. It serves as both a real-world enterprise management tool and an interactive academic viva/practical demonstration platform.
 
----
+TeamFlow ERP is a web-based Employee, Project & Task Management System designed to simplify employee management, task assignment, and project tracking. It also demonstrates concepts covered in the React, Node.js, Express.js, and MongoDB syllabus.
 
-## 🎯 Syllabus Mapping (Unit 1 to Unit 5)
+## ✨ Features
 
-| Unit | Syllabus Module | Hours | Implemented Features & Code Locations |
-| :--- | :--- | :---: | :--- |
-| **Unit 1** | **Introduction To React Fundamentals** | 12 hrs | • First React App with Vite & JSX expressions<br>• Dynamic class rendering (`badge-success`, `badge-danger`)<br>• Functional Components & Props passing<br>• List rendering with unique keys & conditional rendering (`&&`, ternary)<br>• Controlled Forms (`src/pages/Employees.jsx`, `src/pages/SyllabusLab.jsx`) |
-| **Unit 2** | **Role Of React Router And Hooks** | 12 hrs | • `BrowserRouter`, `Routes`, `Route`, `NavLink` with active states (`src/components/Navbar.jsx`, `src/App.jsx`)<br>• Lazy Routing (`React.lazy` & `<Suspense>`)<br>• **All 7 React Hooks**: `useState`, `useEffect`, `useContext`, `useReducer`, `useCallback`, `useMemo`, `useRef`<br>• **Redux Alternative Pattern**: `useReducer + useContext` global store (`src/context/AppContext.jsx`) |
-| **Unit 3** | **RESTful API Calling With React JS** | 12 hrs | • Axios library integration with error handling<br>• Full CRUD: Calling `GET`, `POST`, `PUT`, `DELETE` APIs<br>• Interactive REST Inspector (`src/pages/SyllabusLab.jsx` - Unit 3 Tab)<br>• Form handling with live JSON API communication |
-| **Unit 4** | **Introduction to Node.js & Core File System** | 12 hrs | • Node.js runtime environment and HTTP server architecture<br>• Asynchronous programming: Callbacks, Promises, and `async/await`<br>• **Node.js `fs` Module**: `fs.promises.writeFile`, `readFile`, `appendFile`, `unlink`<br>• **Sync vs Async Benchmark**: Compares `fs.readFileSync` vs `fs.promises.readFile` (`backend/controllers/nodeFsController.js`, `src/pages/Reports.jsx`) |
-| **Unit 5** | **Building RESTful APIs with Node & Express** | 12 hrs | • REST principles, HTTP methods (`GET`, `POST`, `PUT`, `DELETE`, `PATCH`), and Status Codes (`200`, `201`, `400`, `404`, `500`)<br>• Express Middleware chain & custom request logger with elapsed ms<br>• Centralized Error Handling middleware (`backend/middleware/errorHandler.js`)<br>• **MongoDB & Mongoose**: Schemas, validations, types, timestamps, and virtuals<br>• **Select Command (Projections)**: `Model.find().select('fields')` demo<br>• **MongoDB Aggregation Pipeline**: `$group`, `$sum`, `$avg` department analytics (`backend/controllers/employeeController.js`) |
+- **Employee Management:** Add, view, update, and delete employee records.
+- **Project Management:** View projects and track project progress.
+- **Task Management:** Create tasks and manage task status through a Kanban workflow.
+- **Dashboard & Analytics:** Display employee statistics and department analytics.
+- **REST API Integration:** Perform CRUD operations using Axios.
+- **React Routing:** Navigation using React Router and lazy loading.
+- **State Management:** Manage application state using React Hooks, Context API, and useReducer.
+- **Node.js File System:** Demonstrate file writing, reading, appending, and deletion.
+- **Error Handling:** Express middleware, request logging, and centralized error handling.
 
----
+## 🛠️ Technology Stack
 
-## 🛠️ Architecture & Tech Stack
+- **Frontend:** React.js 19, Vite, HTML, CSS, JavaScript
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB, Mongoose
+- **API Communication:** Axios, REST APIs
+- **Tools:** VS Code, Git, GitHub
 
-```mermaid
-graph TD
-    Client["React 19 Frontend (Vite)"] -->|Axios REST Calls| Server["Express.js Server (Port 5000)"]
-    Server -->|Middleware Pipeline| Logger["Custom Logger & CORS"]
-    Logger -->|Controllers| EmpCtrl["Employee Controller"]
-    Logger -->|Controllers| PrjCtrl["Project Controller"]
-    Logger -->|Controllers| TskCtrl["Task Controller"]
-    Logger -->|Controllers| FsCtrl["Node.js File System Controller"]
-    EmpCtrl -->|Mongoose ODM| Mongo[("MongoDB Database / Fallback")]
-    FsCtrl -->|fs.promises| Disk[("Local Disk Sandbox Files")]
+## 📚 Syllabus Coverage
+
+| Unit | Topics Covered |
+|---|---|
+| Unit 1 | React Fundamentals, JSX, Components, Props, Conditional Rendering, Forms |
+| Unit 2 | React Router, Lazy Loading, React Hooks, Context API, useReducer |
+| Unit 3 | REST API Integration, Axios, CRUD Operations |
+| Unit 4 | Node.js, Async Programming, File System, Sync vs Async |
+| Unit 5 | Express.js, Middleware, REST APIs, MongoDB, Mongoose, Aggregation |
+
+## 📂 Project Structure
+
+```text
+Team-Flow-ERP/
+├── frontend/
+│   └── React Application
+├── backend/
+│   ├── server.js
+│   ├── controllers/
+│   └── middleware/
+└── README.md
 ```
 
----
+## ⚙️ Installation & Setup
 
-## 🚀 How to Run Locally
+### Prerequisites
 
-### 1. Backend Server
+- Node.js and npm
+- Git
+- MongoDB (as configured for the application)
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/faisalkhan-fk/Team-Flow-ERP.git
+cd Team-Flow-ERP
+```
+
+### 2. Start the Backend
+
 ```bash
 cd backend
 npm install
 node server.js
 ```
-> Running at: **`http://localhost:5000`**
 
-### 2. Frontend Application
+Backend URL: `http://localhost:5000`
+
+### 3. Start the Frontend
+
+Open another terminal:
+
 ```bash
 cd frontend
 npm install
 npm run dev
 ```
-> Running at: **`http://localhost:5173`**
 
----
+Frontend URL: `http://localhost:5173`
 
-## 📡 REST API Endpoints Overview
+## 📡 API Overview
 
-| Method | Endpoint | Description | Unit Covered |
-| :--- | :--- | :--- | :---: |
-| `GET` | `/api/health` | System health, DB connection status, syllabus overview | Unit 5 |
-| `GET` | `/api/employees` | Get all employees (supports `?search=`, `?department=`, `?select=`, `?sortBy=`) | Unit 3 & 5 |
-| `POST` | `/api/employees` | Create employee record (with validation) | Unit 3 & 5 |
-| `PUT` | `/api/employees/:id` | Update employee record | Unit 3 & 5 |
-| `DELETE` | `/api/employees/:id` | Delete employee record | Unit 3 & 5 |
-| `GET` | `/api/employees/stats/analytics` | MongoDB Aggregation pipeline ($group by dept, $avg salary) | Unit 5 |
-| `GET` | `/api/projects` | List all enterprise projects | Unit 3 |
-| `PATCH` | `/api/projects/:id/progress` | Live progress slider update | Unit 3 |
-| `GET` | `/api/tasks` | Get tasks for Kanban board | Unit 2 & 3 |
-| `POST` | `/api/tasks` | Create new task (dispatched via useReducer) | Unit 2 & 3 |
-| `PATCH` | `/api/tasks/:id` | Transition task status (Todo -> In Progress -> Review -> Done) | Unit 2 |
-| `POST` | `/api/node-fs/write` | Write file asynchronously (`fs.promises.writeFile`) | Unit 4 |
-| `GET` | `/api/node-fs/read` | Read file asynchronously (`fs.promises.readFile`) | Unit 4 |
-| `POST` | `/api/node-fs/append` | Append content (`fs.promises.appendFile`) | Unit 4 |
-| `DELETE`| `/api/node-fs/delete` | Delete file (`fs.promises.unlink`) | Unit 4 |
-| `GET` | `/api/node-fs/benchmark`| Sync vs Async I/O timing benchmark on server | Unit 4 |
+| Method | Endpoint | Description |
+|---|---|---|
+| GET | `/api/health` | Health check |
+| GET | `/api/employees` | Fetch employees |
+| POST | `/api/employees` | Create employee |
+| PUT | `/api/employees/:id` | Update employee |
+| DELETE | `/api/employees/:id` | Delete employee |
+| GET | `/api/projects` | Fetch projects |
+| GET | `/api/tasks` | Fetch tasks |
+| POST | `/api/tasks` | Create task |
+| PATCH | `/api/tasks/:id` | Update task status |
+
+## 🎯 Project Objective
+
+The objective of TeamFlow ERP is to improve employee management, simplify task allocation, monitor project progress, and demonstrate practical implementation of full-stack web development concepts.
+
+## 🔮 Future Enhancements
+
+- Enhanced authentication and authorization
+- Automated notifications
+- Advanced reporting and analytics
+- AI-based task recommendations
+
+## 👨‍💻 Author
+
+**Faisal Khan**
+
+GitHub: [faisalkhan-fk](https://github.com/faisalkhan-fk)
+
+## 📄 License
+
+Add a suitable open-source license if you intend to distribute this project under one.
