@@ -17,6 +17,7 @@ TeamFlow ERP is a web-based Employee, Project & Task Management System designed 
 - **State Management:** Manage application state using React Hooks, Context API, and useReducer.
 - **Node.js File System:** Demonstrate file writing, reading, appending, and deletion.
 - **Error Handling:** Express middleware, request logging, and centralized error handling.
+- **Reporting & Export Center:** Generate and download official PDF, Excel, and CSV corporate telemetry reports.
 
 ## 🛠️ Technology Stack
 
@@ -41,21 +42,31 @@ TeamFlow ERP is a web-based Employee, Project & Task Management System designed 
 ```text
 Team-Flow-ERP/
 ├── frontend/
-│   └── React Application
+│   ├── src/
+│   │   ├── components/
+│   │   ├── context/
+│   │   └── pages/
+│   ├── package.json
+│   └── vercel.json
 ├── backend/
-│   ├── server.js
+│   ├── config/
 │   ├── controllers/
-│   └── middleware/
+│   ├── middleware/
+│   ├── models/
+│   ├── routes/
+│   ├── package.json
+│   └── server.js
+├── vercel.json
 └── README.md
 ```
 
-## ⚙️ Installation & Setup
+## ⚙️ Local Installation & Setup
 
 ### Prerequisites
 
-- Node.js and npm
+- Node.js (v18+) and npm
 - Git
-- MongoDB (as configured for the application)
+- MongoDB (Local or MongoDB Atlas)
 
 ### 1. Clone the Repository
 
@@ -86,30 +97,59 @@ npm run dev
 
 Frontend URL: `http://localhost:5173`
 
+---
+
+## 🌐 Cloud Deployment Guide (100% Free Setup)
+
+### 1. Database: MongoDB Atlas
+- Create a free **M0 Sandbox** cluster at [MongoDB Atlas](https://www.mongodb.com/cloud/atlas).
+- Whitelist all IPs (`0.0.0.0/0`) in Network Access.
+- Copy your Connection String (`mongodb+srv://<user>:<password>@cluster0.mongodb.net/teamflow`).
+
+### 2. Backend API: Render.com (Web Service)
+- Create a new **Web Service** on [Render](https://render.com) connected to this repository.
+- Root Directory: `backend`
+- Build Command: `npm install`
+- Start Command: `node server.js`
+- Environment Variables:
+  - `PORT`: `5000`
+  - `NODE_ENV`: `production`
+  - `MONGO_URI`: `your-atlas-connection-string`
+  - `EMAIL_USER`: `your-gmail@gmail.com`
+  - `EMAIL_PASS`: `your-16-char-app-password`
+
+### 3. Frontend App: Vercel (Vite)
+- Import this repository on [Vercel](https://vercel.com).
+- Framework Preset: `Vite`
+- Root Directory: `frontend`
+- Build Command: `npm run build`
+- Output Directory: `dist`
+- Environment Variables:
+  - `VITE_API_URL`: `https://your-backend-app.onrender.com`
+
+---
+
 ## 📡 API Overview
 
 | Method | Endpoint | Description |
 |---|---|---|
-| GET | `/api/health` | Health check |
-| GET | `/api/employees` | Fetch employees |
-| POST | `/api/employees` | Create employee |
-| PUT | `/api/employees/:id` | Update employee |
-| DELETE | `/api/employees/:id` | Delete employee |
-| GET | `/api/projects` | Fetch projects |
-| GET | `/api/tasks` | Fetch tasks |
+| GET | `/api/health` | System Health check |
+| GET | `/api/employees` | Fetch all employees |
+| POST | `/api/employees` | Create employee record |
+| PUT | `/api/employees/:id` | Update employee record |
+| DELETE | `/api/employees/:id` | Delete employee record |
+| GET | `/api/projects` | Fetch all projects |
+| PATCH | `/api/projects/:id/progress` | Update project progress |
+| GET | `/api/tasks` | Fetch Kanban tasks |
 | POST | `/api/tasks` | Create task |
 | PATCH | `/api/tasks/:id` | Update task status |
+| GET | `/api/attendance` | Attendance telemetry |
+| GET | `/api/leaves` | Leave management |
+| GET | `/api/node-fs/benchmark`| Node.js sync vs async file system benchmark |
 
 ## 🎯 Project Objective
 
 The objective of TeamFlow ERP is to improve employee management, simplify task allocation, monitor project progress, and demonstrate practical implementation of full-stack web development concepts.
-
-## 🔮 Future Enhancements
-
-- Enhanced authentication and authorization
-- Automated notifications
-- Advanced reporting and analytics
-- AI-based task recommendations
 
 ## 👨‍💻 Author
 
@@ -119,4 +159,4 @@ GitHub: [faisalkhan-fk](https://github.com/faisalkhan-fk)
 
 ## 📄 License
 
-Add a suitable open-source license if you intend to distribute this project under one.
+MIT License
